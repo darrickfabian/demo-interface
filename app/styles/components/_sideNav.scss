@@ -73,19 +73,19 @@ nav#navigation a:hover, nav a.active, nav a:active {
   opacity: 1;
 }
 nav#navigation a:hover.about, nav a.active.about, nav a:active.about {
-  color: #009DD9;
+  color: #ccc;
 }
 nav#navigation a:hover.vision, nav a.active.vision, nav a:active.vision {
-  color: #0066B2;
+  color: #ccc;
 }
 nav#navigation a:hover.values, nav a.active.values, nav a:active.values {
-  color: #0B2D71;
+  color: #ccc;
 }
 nav#navigation a:hover.strategies, nav a.active.strategies, nav a:active.strategies {
-  color: #00708C;
+  color: #ccc;
 }
 nav#navigation a:hover.resources, nav a.active.resources, nav a:active.resources {
-  color: #003653;
+  color: #ccc;
 }
 nav#navigation a.active {
   cursor: default;
@@ -99,40 +99,40 @@ nav#navigation a .dot {
 }
 nav#navigation a:hover > .dot.about,
 nav#navigation a.active > .dot.about {
-  background: #009DD9;
+  background: #ccc;
 }
 nav#navigation a.active.about .link-name {
-  color: #009DD9;
+  color: #ccc;
 }
 nav#navigation a:hover > .dot.vision,
 nav#navigation a.active > .dot.vision {
-  background: #0066B2;
+  background: #ccc;
 }
 nav#navigation a.active.vision .link-name {
-  color: #0066B2;
+  color: #ccc;
 }
 nav#navigation a:hover > .dot.values,
 nav#navigation a.active > .dot.values {
-  background: #0B2D71;
+  background: #ccc;
 }
 nav#navigation a.active.values .link-name {
-  color: #0B2D71;
+  color: #ccc;
 }
 nav#navigation a:hover > .dot.strategies,
 nav#navigation a.active > .dot.strategies {
-  background: #00708C;
+  background: #ccc;
 }
 nav#navigation a.active.strategies .link-name {
-  color: #00708C;
+  color: #ccc;
 }
 nav#navigation a:hover > .dot.resources,
 nav#navigation a.active > .dot.resources {
-  background: #003653;
+  background: #ccc;
 }
 nav#navigation a.active.resources .link-name {
-  color: #003653;
+  color: #ccc;
 }
 
 nav#navigation a:active, nav#navigation a.active {
-  color: #009DD9;
+  color: #ccc;
 }
