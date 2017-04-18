@@ -1,0 +1,251 @@
+#strategies {
+  h2 {
+    font-size: 64px;
+    @include responsive(lessthansmall) {
+      font-size: 44px;
+      margin: 12px 0 0 0;
+    }
+  }
+  .row {
+    margin: 0;
+  }
+  .content-col {
+    padding: 0;
+    h2,
+    h3 {
+      font-family: 'GothamBold';
+    }
+    p {
+      margin: 20px auto;
+      font-family: 'GothamNarrowBook';
+      font-size: 20px;
+      line-height: 1.5;
+      @include responsive(lessthansmall) {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      &:last-child {
+        @include responsive(lessthansmall) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .feature-img-wrap {
+      overflow: hidden;
+      .feature-img {
+        transition: all 0.6s ease;
+        padding: 0px;
+      }
+    }
+  }
+  .inner-col {
+    text-align: center;
+    padding: 0px;
+    img {
+      margin: 0 auto;
+      @include responsive(lessthansmall) {
+        width: 45px;
+      }
+    }
+    &.first-item {
+      padding: 5% 10%;
+      @include responsive(lessthansmall) {
+        padding: 60px 28px;
+      }
+    }
+    .ani4 {
+      position: relative;
+    }
+  }
+}
+.ribbon4 {
+  .text-block-container {
+    padding: 100px 40px;
+    .text-block {
+      width: 80%;
+      margin: 0 auto;
+      h3 {
+        font-family: 'GothamBold';
+        font-size: 32px;
+        color: $white;
+        line-height: 1.3;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        @include responsive(lessthansmall) {
+          font-size: 26px;
+          line-height: 1.4;
+        }
+      }
+      p {
+        font-family: 'GothamNarrowBook';
+        font-size: 24px;
+        color: $white;
+        line-height: 1.3;
+        @include responsive(lessthansmall) {
+          font-size: 20px;
+          line-height: 1.5;
+        }
+      }
+      a {
+        font-family: 'GothamBold';
+        font-size: 18px;
+        color: $white;
+        line-height: 1.3;
+        margin-top: 40px;
+        display: inline-block;
+        text-decoration: none;
+        span {
+          font-size: 12px;
+        }
+        @include responsive(lessthansmall) {
+          font-size: 18px;
+          line-height: 1.3;
+          margin-top: 30px;
+        }
+      }
+      @include responsive(lessthansmall) {
+        width: 98%;
+      }
+    }
+    @include responsive(lessthansmall) {
+      padding: 60px 28px;
+    }
+  }
+}
+.cvx-strategies {
+  background: $white;
+  border: none;
+  padding: 60px 0;
+  .tab-content .tab-pane {
+    display: block;
+    opacity: 1;
+    .strategies-group-title {
+      font-family: 'GothamBold';
+      color: $black;
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 40px;
+      margin-top: 0px;
+      text-align: center;
+      line-height: 1.3;
+    }
+  }
+  .strategy-wrap {
+    @include responsive(lessthansmall) {
+      margin-bottom: 40px;
+    }
+    h3 {
+      color: $brand-primary;
+      font-family: 'GothamBold';
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 30px;
+      margin-top: 10px;
+    }
+    p {
+      font-family: 'GothamNarrowBook';
+      color: $black;
+      font-size: 16px;
+      line-height: 28px;
+      margin: 10px;
+    }
+    a {
+      color: $brand-primary;
+      font-family: 'GothamBold';
+      font-size: 18px;
+      position: relative;
+      span {
+        font-size: 12px;
+        vertical-align: middle;
+        &.rMore {
+          color: $brand-primary;
+          font-family: 'GothamBold';
+          font-size: 18px;
+          line-height: 1.3;
+        }
+      }
+      &:focus {
+        outline: 0px;
+      }
+      &:hover {
+        // text-decoration: none;
+        span {
+          &.rMore {
+            text-decoration: underline;
+          }
+        }
+        &:after {
+          text-decoration: none !important;
+        }
+      }
+      &:focus {
+        text-decoration: none;
+        span {
+          &.rMore {
+            text-decoration: underline;
+          }
+        }
+        &:after {
+          text-decoration: none !important;
+        }
+      }
+    }
+    margin-bottom: 30px;
+    &.last-item {
+      @include responsive(lessthansmall) {
+        margin-bottom: 60px;
+      }
+    }
+    span.glyphicon {
+      color: $oceanBlue;
+      font-size: 12px;
+      top: 1px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+    .nav.nav-tabs {
+      border: none;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .nav-tabs > li {
+      background: none;
+      display: inline-block;
+      float: none;
+      margin: 0 50px;
+      &.active {
+        border-bottom: 3px solid $black;
+      }
+      > a, > a:hover, > a:focus {
+        background: none;
+        border: none;
+        color: $black;
+        font-family: 'GothamBold';
+        font-size: 20px;
+        padding: 5px 5px 0;
+        margin: 0;
+      }
+    }
+    .tab-content .tab-pane {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    .strategy-wrap {
+      h3 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 10px;
+      }
+      p {
+        margin: 10px 10px;
+      }
+      margin-bottom: 0;
+    }
+  }
+  @include responsive(lessthansmall) {
+    padding: 60px 0px 0px 0px;
+  }
+}

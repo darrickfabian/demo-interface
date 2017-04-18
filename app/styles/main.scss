@@ -1,0 +1,27 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/sass-mediaqueries/_media-queries.scss";
+// endbower
+
+//partials
+@import 'partials/base';
+@import 'partials/mixins';
+@import 'partials/fonts';
+@import 'partials/global';
+
+// components
+@import 'components/headerNav';
+@import 'components/sideNav';
+@import 'components/iconNav';
+@import 'components/modal';
+@import 'components/footer';
+@import 'components/mediaPlayer';
+
+
+// pages
+@import 'pages/aboutVision';
+@import 'pages/values';
+@import 'pages/strategies';
+@import 'pages/resources';

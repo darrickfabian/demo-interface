@@ -1,0 +1,67 @@
+$brand-primary: #999;
+$black: #000;
+$white: #fff;
+$darkBlue: #999;
+$medBlue: #999;
+$lightBlue: #999;
+$midnightBlue: #999;
+$oceanBlue: #999;
+$teal: #999;
+
+$darkGrey: #6B6D6F;
+$medGrey: #8C8F93;
+$lightGrey: #DBDCDD;
+$grey: #f5f5f5;
+
+.darkBlue {
+  color: $darkBlue;
+}
+.medBlue {
+  color: $medBlue;
+}
+.lightBlue {
+  color: $lightBlue;
+}
+.midnightBlue {
+  color: $midnightBlue;
+}
+.oceanBlue {
+  color: $oceanBlue;
+}
+.teal {
+  color: $teal;
+}
+.wht {
+  background-color: $white;
+}
+.grey {
+  background-color: $grey;
+}
+.l-blue {
+  background-color: $lightBlue;
+}
+.m-blue {
+  background-color: $medBlue;
+}
+.d-blue {
+  background-color: $darkBlue;
+}
+.o-blue {
+  background-color: $oceanBlue;
+}
+//////////////////////////////////////
+// BREAKPOINTS
+//////////////////////////////////////
+$break-lg: 1280px;
+$break-md: 1080px;
+$break-sm: 768px;
+$break-xs: 480px;
+
+// Change default bootstrap grid
+// $grid-gutter-width:            30px;
+$screen-lg:                    (1280px); // desktop, fixed width
+$screen-md:                    (1080px); // desktop, fluid width
+$screen-sm:                    (768px) ; // tablet
+$screen-xs:                    (480px) ;
+$container-large-desktop:      (1280px);
+$container-desktop:            (auto);

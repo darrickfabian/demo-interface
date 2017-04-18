@@ -1,0 +1,138 @@
+nav#navigation {
+  height: 100vh;
+  max-height: 100%;
+  position: fixed;
+  right: -55px;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  &.active {
+    right: 0px;
+  }
+  @include responsive(lessthansmall) {
+    display: none;
+  }
+}
+nav#navigation .sidenav {
+  width: 40px;
+  height: 100vh;
+  max-height: 100%;
+  padding: 0 10px 0px 15px;
+  background: #fff;
+  opacity: 0.7;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+nav#navigation .sidenav .links {
+  width: 235px;
+}
+nav#navigation .sidenav .link-name {
+  display: none;
+}
+nav#navigation .sidenav:hover {
+  width: 205px;
+  padding: 0 30px;
+  opacity: 0.9;
+}
+nav#navigation .sidenav {
+  &.peekaboo {
+    width: 205px;
+    padding: 0 30px;
+    opacity: 0.9;
+    .link-name {
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+}
+nav#navigation .sidenav:hover .link-name {
+  display: inline-block;
+  margin-left: 15px;
+}
+nav#navigation .links {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav#navigation a {
+  font-size: 18px;
+  padding-bottom: 14px;
+  font-family: "GothamBookMedium", sans-serif;
+  color: #000;
+  // opacity: 0.7;
+  display: block;
+  text-align: left;
+}
+nav#navigation a:last-of-type {
+  padding-bottom: 0;
+}
+nav#navigation a.active {
+  font-weight: bold;
+}
+nav#navigation a:hover, nav a.active, nav a:active {
+  opacity: 1;
+}
+nav#navigation a:hover.about, nav a.active.about, nav a:active.about {
+  color: #009DD9;
+}
+nav#navigation a:hover.vision, nav a.active.vision, nav a:active.vision {
+  color: #0066B2;
+}
+nav#navigation a:hover.values, nav a.active.values, nav a:active.values {
+  color: #0B2D71;
+}
+nav#navigation a:hover.strategies, nav a.active.strategies, nav a:active.strategies {
+  color: #00708C;
+}
+nav#navigation a:hover.resources, nav a.active.resources, nav a:active.resources {
+  color: #003653;
+}
+nav#navigation a.active {
+  cursor: default;
+}
+nav#navigation a .dot {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+nav#navigation a:hover > .dot.about,
+nav#navigation a.active > .dot.about {
+  background: #009DD9;
+}
+nav#navigation a.active.about .link-name {
+  color: #009DD9;
+}
+nav#navigation a:hover > .dot.vision,
+nav#navigation a.active > .dot.vision {
+  background: #0066B2;
+}
+nav#navigation a.active.vision .link-name {
+  color: #0066B2;
+}
+nav#navigation a:hover > .dot.values,
+nav#navigation a.active > .dot.values {
+  background: #0B2D71;
+}
+nav#navigation a.active.values .link-name {
+  color: #0B2D71;
+}
+nav#navigation a:hover > .dot.strategies,
+nav#navigation a.active > .dot.strategies {
+  background: #00708C;
+}
+nav#navigation a.active.strategies .link-name {
+  color: #00708C;
+}
+nav#navigation a:hover > .dot.resources,
+nav#navigation a.active > .dot.resources {
+  background: #003653;
+}
+nav#navigation a.active.resources .link-name {
+  color: #003653;
+}
+
+nav#navigation a:active, nav#navigation a.active {
+  color: #009DD9;
+}

@@ -1,0 +1,119 @@
+// Responsive mixins for inline usage
+@mixin responsive($size) {
+	@if ($size == extrasmall) {
+		@include max-screen($break-xs) {
+			@content;
+		}
+	}
+	@if ($size == small) {
+		@include max-screen($break-sm) {
+			@content;
+		}
+	}
+	@else if ($size == medium) {
+		@include screen($break-md + 1, $break-lg) {
+			@content;
+		}
+	}
+	@else if ($size == morethanmedium) {
+		@include min-screen($break-md) {
+			@content;
+		}
+	}
+	@else if ($size == large) {
+		@include min-screen($break-lg + 0) {
+			@content;
+		}
+	}
+	@else if ($size == lessthanlarge) {
+		@include max-screen($break-lg - 1) {
+			@content;
+		}
+	}
+	@else if ($size == lessthanmedium) {
+		@include max-screen($break-md - 1) {
+			@content;
+		}
+	}
+	@else if ($size == lessthansmall) {
+		@include max-screen($break-sm - 1) {
+			@content;
+		}
+	}
+	@else if ($size == lessthansmallalt) {
+		@include max-screen($break-sm-alt) {
+			@content;
+		}
+	}
+	@else if ($size == morethansmall) {
+		@include min-screen($break-sm) {
+			@content;
+		}
+	}
+}
+
+@mixin arrow($direction,$size,$color,$type:arrow) {
+	width: 0;
+	height: 0;
+	@include inline-block;
+	$arrow: $size solid $color;
+	$transp: $size solid transparent;
+	@if ($type == arrow) {
+		@if ($direction == right) {
+			border-top: $transp;
+			border-bottom: $transp;
+			border-left: $arrow;
+		}
+		@else if ($direction == left) {
+			border-top: $transp;
+			border-bottom: $transp;
+			border-right: $arrow;
+		}
+		@else if ($direction == up) {
+			border-left: $transp;
+			border-right: $transp;
+			border-bottom: $arrow;
+		}
+		@else if ($direction == down) {
+			border-left: $transp;
+			border-right: $transp;
+			border-top: $arrow;
+		}
+	}
+	@else if ($type == corner) {
+		@if ($direction == bottomright) {
+			border-bottom: $arrow;
+			border-right: $arrow;
+			border-left: $transp;
+			border-top: $transp;
+		}
+		@else if ($direction == bottomleft) {
+			border-bottom: $arrow;
+			border-left: $arrow;
+			border-right: $transp;
+			border-top: $transp;
+		}
+		@else if ($direction == topleft) {
+			border-left: $arrow;
+			border-top: $arrow;
+			border-right: $transp;
+			border-bottom: $transp;
+		}
+		@else if ($direction == topright) {
+			border-right: $arrow;
+			border-top: $arrow;
+			border-left: $transp;
+			border-bottom: $transp;
+		}
+	}
+}
+@mixin animationDelay ($delay) {
+    animation-delay:      $delay;
+}
+
+$interval: .25s;
+$classesToAdd: 10;
+
+@for $i from 1 to $classesToAdd + 1 {
+	._#{$i} { @include animationDelay($i * $interval); }
+}

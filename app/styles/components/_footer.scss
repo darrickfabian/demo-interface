@@ -1,0 +1,29 @@
+footer {
+    background: #ededee;
+    padding: 40px 20px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'GothamNarrowBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    .arrow-link.arrow-color {
+        color: #0066B2;
+    }
+    a:hover, a:focus, a:active {
+        text-decoration: underline;
+        color: #0066B2;
+    }
+}
+footer .list-inline > li {
+    border-right: 1px solid #dbdcdd;
+    padding-right: 15px;
+    padding-left: 12px;
+    line-height: 1.5em;
+    @include responsive(lessthansmall) {
+      border-right: 0px solid #dbdcdd;
+      display: block;
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
+footer .list-inline > li:last-child {
+    border-right: none;
+}

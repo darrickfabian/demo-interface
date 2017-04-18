@@ -1,0 +1,355 @@
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+html,
+body {
+  margin: 0;
+  // height: 100%
+  -ms-overflow-style: scrollbar;
+}
+.contentWrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+	html {
+		font-family: sans-serif;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+
+	body {
+		margin: 0;
+    background-color: #DBDCDD;
+	}
+
+
+	/*--------------------------------------------------------------
+	# Pages
+	--------------------------------------------------------------*/
+html, body {
+    // height: 100%;
+    margin: 0;
+}
+// #navigation {
+//   position: fixed;
+//   width: 100px;
+//   height: 200px;
+//   background: #fff;
+//   border: 2px solid black;
+//   z-index: 100;
+//   top: 100px;
+//   right: 20px;
+// }
+//
+// #navigation ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+//
+// #navigation ul li {
+//   margin: 0;
+//   padding: 0;
+//   a {
+//     &.active {
+//       color: red;
+//     }
+//   }
+// }
+//
+// #navigation ul li.back {
+//   padding-top: 10px;
+// }
+header {
+  z-index: 9999;
+  position: relative;
+}
+header .content {
+    padding: 30px;
+    text-align: center;
+}
+#contentwrapper {
+}
+.panel {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+footer {
+  background-color: $grey;
+}
+footer .content {
+    padding: 5px;
+    text-align: center;
+}
+.stretch {
+  width: 100%;
+}
+.break-bold {
+  display: block;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+.noPad {
+  padding: 0;
+}
+.valign-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  @include responsive(lessthansmall) {
+    top: 20%;
+    transform: none;
+  }
+}
+
+.ribbon-container1 {
+  .ribbon1 {
+    left: 100%;
+    @include responsive(lessthansmall) {
+      left: 0px;
+    }
+    transition: all 0.3s ease;
+    &.isActive {
+      left: 0px;
+    }
+  }
+}
+.ribAni1,
+.ribAni2,
+.ribAni3,
+.ribAni4,
+.ribAni5 {
+  position: relative;
+}
+.ribbon-container2 {
+  h3 {
+    font-family: 'GothamBold';
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  p {
+    font-family: 'GothamNarrowBook';
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .ribbon2 {
+    left: 100%;
+    transition: all 0.3s ease;
+    @include responsive(lessthansmall) {
+      left: 0px;
+    }
+    &.isActive {
+      left: 0px;
+    }
+    .text-block-container {
+      min-height: 320px;
+      @include responsive(lessthansmall) {
+        min-height: 1px;
+      }
+    }
+    .extraHmar {
+      margin: 0 30px;
+    }
+  }
+}
+.ribbon-container3 {
+  h3 {
+    font-family: 'GothamBold';
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  p {
+    font-family: 'GothamNarrowBook';
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .ribbon3 {
+    left: -100%;
+    transition: all 0.3s ease;
+    @include responsive(lessthansmall) {
+      left: 0px;
+    }
+    &.isActive {
+      left: 0px;
+    }
+    .text-block-container {
+      min-height: 320px;
+      @include responsive(lessthansmall) {
+        min-height: 1px;
+      }
+    }
+  }
+}
+.ribbon-container4 {
+  h3 {
+    font-family: 'GothamBold';
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  p {
+    font-family: 'GothamNarrowBook';
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .ribbon4 {
+    left: 100%;
+    transition: all 0.3s ease;
+    @include responsive(lessthansmall) {
+      left: 0px;
+    }
+    &.isActive {
+      left: 0px;
+    }
+    .text-block-container {
+      min-height: 320px;
+      @include responsive(lessthansmall) {
+        min-height: 1px;
+      }
+    }
+  }
+}
+.ribbon-container5 {
+  h3 {
+    font-family: 'GothamBold';
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  p {
+    font-family: 'GothamNarrowBook';
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .ribbon5 {
+    left: -100%;
+    transition: all 0.3s ease;
+    @include responsive(lessthansmall) {
+      left: 0px;
+    }
+    &.isActive {
+      left: 0px;
+    }
+    .text-block-container {
+      min-height: 320px;
+    }
+  }
+}
+.extraBotPad {
+  padding-bottom: 9px;
+}
+.extraBotPad2 {
+  padding-bottom: 9px;
+}
+.extraBotPad3 {
+  padding-bottom: 13px;
+}
+.noMar {
+  margin: 0px !important;
+}
+.noBreak {
+  display: inline;
+  white-space: nowrap;
+}
+.desk-break {
+  @include responsive(lessthansmall) {
+    display: none;
+  }
+}
+.back-to-top {
+  display: none;
+  @include responsive(lessthansmall) {
+    display: block;
+    div.top-container {
+      opacity: 0.9;
+      z-index: 1000;
+      padding: 15px;
+      margin-top: -68px;
+    }
+    a.arrow-link span {
+      padding: 17px;
+      width: auto;
+      color: $white;
+      margin-right: 10px;
+      background-color: #bfc1c0 !important;
+      float: right;
+      &:hover {
+        background-color: #686c67 !important;
+      }
+    }
+  }
+}
+#t1 {
+  .text-block-container {
+    padding: 75px 40px;
+    .text-block {
+      width: 80%;
+      margin: 0 auto;
+      h3 {
+        font-family: 'GothamBold';
+        font-size: 32px;
+        color: $white;
+        line-height: 1.3;
+      }
+      p {
+        font-family: 'GothamNarrowBook';
+        font-size: 24px;
+        color: $white;
+        line-height: 1.3;
+      }
+      a {
+        font-family: 'GothamBold';
+        font-size: 18px;
+        color: $white;
+        line-height: 1.3;
+        margin-top: 30px;
+        display: inline-block;
+        text-decoration: none;
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .ribAni5 {
+    position: relative;
+  }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

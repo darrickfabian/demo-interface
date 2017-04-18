@@ -1,0 +1,236 @@
+.icon-nav-outter {
+  @include responsive(lessthansmall) {
+    display: none;
+  }
+  padding: 10px;
+  .icon-nav-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    display: table;
+    margin: 25px auto;
+    height: 92px;
+    .icon-nav-item {
+      display: table-cell;
+      text-align: center;
+      width: 20%;
+      margin: 0 3%;
+      position: relative;
+      a {
+        &:hover {
+          span {
+            text-decoration: underline;
+          }
+        }
+        &.lightBlue {
+          &:hover {
+            span {
+              color: $lightBlue;
+            }
+          }
+        }
+        &.medBlue {
+          &:hover {
+            span {
+              color: $medBlue;
+            }
+          }
+        }
+        &.darkBlue {
+          &:hover {
+            span {
+              color: $darkBlue;
+            }
+          }
+        }
+        &.midnightBlue {
+          &:hover {
+            span {
+              color: $midnightBlue;
+            }
+          }
+        }
+        &.oceanBlue {
+          &:hover {
+            span {
+              color: $oceanBlue;
+            }
+          }
+        }
+      }
+      img {
+        margin: 0 auto;
+        &.xtra-top-pad {
+          padding-top: 3%;
+        }
+      }
+      span {
+        font-family: 'GothamBold';
+        font-size: 20px;
+        display: block;
+        vertical-align: bottom;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+      }
+    }
+  }
+}
+.icon-nav-outter-mobile {
+  @include responsive(morethansmall) {
+    display: none;
+  }
+  padding: 10px;
+  .icon-nav-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    display: table;
+    margin: 22px auto;
+    .row1 {
+      display: table;
+      width: 84%;
+      height: 70px;
+      margin: 0 auto 32px auto;
+    .icon-nav-item {
+      display: table-cell;
+      text-align: center;
+      width: 33%;
+      margin: 0 3%;
+      position: relative;
+      a {
+        &:hover {
+          span {
+            text-decoration: underline;
+          }
+        }
+        &.lightBlue {
+          &:hover {
+            span {
+              color: $lightBlue;
+            }
+          }
+        }
+        &.medBlue {
+          &:hover {
+            span {
+              color: $medBlue;
+            }
+          }
+        }
+        &.darkBlue {
+          &:hover {
+            span {
+              color: $darkBlue;
+            }
+          }
+        }
+        &.midnightBlue {
+          &:hover {
+            span {
+              color: $midnightBlue;
+            }
+          }
+        }
+        &.oceanBlue {
+          &:hover {
+            span {
+              color: $oceanBlue;
+            }
+          }
+        }
+      }
+      img {
+        margin: 0 auto;
+        width: 37px;
+        &.xtra-top-pad {
+          padding-top: 3%;
+        }
+        &.w40 {
+          width: 40px;
+        }
+      }
+      span {
+        font-family: 'GothamBold';
+        font-size: 14px;
+        display: block;
+        vertical-align: bottom;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+      }
+    }
+  }
+  .row2 {
+    display: table;
+    width: 60%;
+    height: 70px;
+    margin: 0 auto;
+  .icon-nav-item {
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    margin: 0 3%;
+    position: relative;
+    a {
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+      &.lightBlue {
+        &:hover {
+          span {
+            color: $lightBlue;
+          }
+        }
+      }
+      &.medBlue {
+        &:hover {
+          span {
+            color: $medBlue;
+          }
+        }
+      }
+      &.darkBlue {
+        &:hover {
+          span {
+            color: $darkBlue;
+          }
+        }
+      }
+      &.midnightBlue {
+        &:hover {
+          span {
+            color: $midnightBlue;
+          }
+        }
+      }
+      &.oceanBlue {
+        &:hover {
+          span {
+            color: $oceanBlue;
+          }
+        }
+      }
+    }
+    img {
+      margin: 0 auto;
+      width: 38px;
+      &.xtra-top-pad {
+        padding-top: 3%;
+      }
+    }
+    span {
+      font-family: 'GothamBold';
+      font-size: 14px;
+      display: block;
+      vertical-align: bottom;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+    }
+  }
+}
+  }
+}

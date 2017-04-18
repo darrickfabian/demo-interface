@@ -1,0 +1,57 @@
+/* Outer media container */
+#mpContainer {
+    margin: 0 0 15px;
+    display: block;
+    width: 100%;
+    max-width:700px;
+    /*height: auto;*/
+}
+/* Inner media container */
+#currentMedia {
+    padding: 0;
+    width:100%;
+    max-width:700px;
+    /*height: auto;
+    overflow: hidden;*/
+    // margin: 0 15px 15px 10px;
+    float: left;
+    display: inline;
+}
+#wmPlayer
+{
+    width:100%
+}
+#altBroadcastOptions{
+    margin-top:-48px;
+    margin-left:492px;
+
+}
+#altBroadcastOptions .btn-group{
+    /*min-width:115px;
+    margin-right:0px;*/
+
+}
+#altBroadcastOptions .dropdown-menu{
+    min-width:110px;
+
+}
+#altBroadcastOptions .btn-xs, .btn-group-xs > .btn{
+    line-height:1.90;
+}
+#altBroadcastOptions .dropdown-menu > li > a{
+    padding-left:5px;
+    padding-right:5px
+}
+#altBroadcastOptions a{
+    color: rgba(0, 56, 178, 1);
+}
+#altBroadcastOptions #fullScreen,
+#bandwidthMenu{
+    color: rgba(0, 56, 178, 1);
+
+}
+#audioOnlyImg{
+    height:auto;
+    width:100%;
+    border-width:0px;
+}

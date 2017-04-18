@@ -1,0 +1,534 @@
+.cvx-modal {
+  .modal-dialog {
+    margin: 10px auto;
+    max-width: 1064px;
+    width: 90%;
+  }
+  .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+  .modal-header {
+    border: none;
+    button.close {
+      color: $black;
+      font-size: 38px;
+      opacity: 1;
+    }
+    @include responsive(lessthansmall) {
+      padding: 12px 15px;
+    }
+  }
+  .modal-body {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    .modal-dialog {
+      margin: 30px auto;
+      width: 95%;
+    }
+  }
+  .cvx-arrow-right {
+    background: url(../images/arrow_right.png) top left no-repeat;
+    height: 23px;
+    width: 30px;
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+  .cvx-arrow-left {
+    background: url(../images/arrow_left.png) top left no-repeat;
+    height: 23px;
+    width: 30px;
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}
+.modal-body {
+  max-width: 630px;
+  margin: 0 auto;
+  .more-strat {
+    .read-more {
+      color: $brand-primary;
+      font-family: 'GothamBold';
+      font-size: 18px !important;
+      position: relative;
+      float: right;
+      line-height: 1;
+      &:focus {
+        outline: 0px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    span {
+      float: right;
+      color: $oceanBlue;
+      font-size: 12px;
+      top: 3px;
+      margin-left: 3px;
+    }
+  }
+}
+//strategies modal
+
+.strategies-modal {
+  .modal-body {
+    max-width: 100%;
+    padding: 0;
+    article {
+      max-width: 630px;
+      margin: 0 auto;
+      padding: 0 15px;
+      h2 {
+        font-family: 'GothamBold';
+        color: $brand-primary;
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+        @include responsive(lessthansmall) {
+          margin: 0 0 20px 0;
+          line-height: 1.1;
+        }
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        @include responsive(lessthansmall) {
+          margin-top: 40px;
+        }
+      }
+      h3, h4, h5 {
+        color: $black;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      h3 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-weight: bold;
+        margin: 20px 0 10px 0;
+      }
+      p {
+        font-family: "GothamNarrowBook";
+        color: $black;
+        font-size: 16px;
+        line-height: 25px;
+      }
+      h4 {
+        margin-top: 15px;
+      }
+      h5 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        text-align: left;
+        @include responsive(lessthansmall) {
+          font-family: "GothamNarrowBold";
+          line-height: 1.4;
+          margin-top: 40px;
+        }
+      }
+      ul {
+        font-family: "GothamNarrowBook";
+        color: $black;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        @include responsive(lessthansmall) {
+          padding-left: 30px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .nav-strategies {
+      margin-top: 50px;
+      position: relative;
+      > div {
+        background: $brand-primary;
+        height: 50px;
+        &.nav-strategies-left {
+          border-right: 1px solid $white;
+          text-align: left;
+          a {
+            font-family: 'GothamBold';
+            padding-left: 15px;
+            > span {
+              margin-left: 15px;
+            }
+          }
+        }
+        &.nav-strategies-right {
+          border-left: 1px solid $white;
+          text-align: right;
+          a {
+            font-family: 'GothamBold';
+            padding-right: 15px;
+            > span {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+      a {
+        background: none;
+        position: absolute;
+        color: $white;
+        font-size: 20px;
+        opacity: 1;
+        // padding-top: 15px;
+        width: 100%;
+        text-shadow: none;
+        > span {
+          font-size: 20px;
+        }
+      }
+      &.row {
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+    }
+    .carousel-control {
+      text-shadow: none;
+      padding-top: 0px;
+      &.right {
+        text-align: right;
+        padding-right: 65px !important;
+      }
+      &.left {
+        text-align: left;
+        padding-left: 65px !important;
+      }
+      span {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .modal-body {
+      article {
+        h2 {
+          font-size: 48px;
+          margin-bottom: 50px;
+        }
+        h3 {
+          font-family: 'GothamBold';
+        }
+        h3, h4, h5 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 22px;
+          line-height: 34px;
+        }
+        h5 {
+          font-family: 'GothamNarrowBold';
+          font-size: 20px;
+          line-height: 36px;
+        }
+        ul {
+          font-size: 22px;
+          line-height: 34px;
+        }
+      }
+      .nav-strategies {
+        margin-top: 100px;
+        > div {
+          height: 85px;
+          &.nav-strategies-left {
+            border-right: 3px solid $white;
+          }
+          &.nav-strategies-right {
+            border-left: 3px solid $white;
+          }
+        }
+        a {
+          // padding-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+#glossaryModal {
+  .modal-body .container {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+  .panel-group .panel + .panel {
+    margin-top: 8px;
+  }
+  .panel-group {
+    margin-bottom: 80px;
+  }
+  .panel-group .panel {
+    border-radius: 0px;
+  }
+  .panel-heading {
+    border-radius: 0px;
+    border-top: 3px solid #f5f5f5;
+    position: relative;
+    &.addBorder {
+      border-top: 3px solid #d6d6d6;
+    }
+    .panel-title {
+      @include responsive(lessthansmall) {
+        font-family: 'GothamNarrowBold';
+        font-size: 18px;
+        line-height: 1.7;
+      }
+    }
+  }
+  .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: 0px;
+  }
+  h2 {
+    font-family: 'GothamBold';
+    text-align: center;
+    color: $darkBlue;
+    font-size: 48px;
+    margin-bottom: 55px;
+    @include responsive(lessthansmall) {
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+  }
+  .panel-group p {
+    font-family: 'GothamNarrowBook';
+    font-size: 16px;
+    line-height: 1.65;
+    color: $black;
+  }
+  .panel-title {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .panel-title > a {
+    font-family: 'GothamBold';
+    font-size: 16px;
+    display: block;
+    padding: 15px 25px 15px 15px;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .panel .panel-body {
+    padding: 20px 45px;
+    @include responsive(lessthansmall) {
+      padding: 20px;
+    }
+  }
+  .more-less {
+    float: right;
+    color: #212121;
+  }
+  .panel-group .panel-heading a {
+    font-family: 'GothamBold';
+    font-size: 16px;
+    color: $black;
+    display: block;
+    padding: 25px 35px 25px 30px;
+    &:hover {
+      text-decoration: none !important;
+      h4 {
+        text-decoration: underline;
+      }
+    }
+    &:focus {
+      text-decoration: none !important;
+      h4 {
+        text-decoration: underline;
+      }
+    }
+    @include responsive(lessthansmall) {
+      font-family: 'GothamNarrowBold';
+      font-size: 18px;
+      line-height: 1.7;
+      padding: 10px 35px 10px 5px;
+    }
+  }
+  .panel-group .panel-heading a.collapsed:after {
+    content: '+';
+    font-family: 'helvetica';
+    font-size: 28px;
+    color: #000 !important;
+    font-weight: 500;
+    margin-left: 15px;
+    right: 30px;
+    position: absolute;
+    margin-top: 0px;
+    // position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .panel-group .panel-heading a:after {
+    content: '-';
+    font-family: 'helvetica';
+    font-size: 38px;
+    color: #000 !important;
+    font-weight: 500;
+    margin-left: 15px;
+    right: 30px;
+    position: absolute;
+    margin-top: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#chairmansLetterModal {
+  .container {
+    max-width: 680px;
+    padding-bottom: 55px;
+    @include responsive(lessthansmall) {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+    img {
+      margin: 5px auto 30px auto;
+      @include responsive(lessthansmall) {
+        margin: 5px auto 20px auto;
+      }
+    }
+  }
+  h2 {
+    font-family: 'GothamBold';
+    text-align: center;
+    color: $lightBlue;
+    font-size: 48px;
+    margin-bottom: 55px;
+    @include responsive(lessthansmall) {
+      font-size: 36px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      margin-top: 0px;
+    }
+  }
+  p {
+    font-family: 'GothamNarrowBook';
+    font-size: 22px;
+    line-height: 1.65;
+    color: $black;
+    @include responsive(lessthansmall) {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  }
+}
+#discussionResourcesModal {
+  .container {
+    max-width: 680px;
+    padding-bottom: 85px;
+    @include responsive(lessthansmall) {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+    img {
+      margin: 5px auto 30px auto;
+      @include responsive(lessthansmall) {
+        margin: 5px auto 20px auto;
+      }
+    }
+  }
+  h2 {
+    font-family: 'GothamBold';
+    text-align: center;
+    color: $midnightBlue;
+    font-size: 48px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+    @include responsive(lessthansmall) {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      margin-top: 0px;
+    }
+  }
+  h3 {
+    font-family: 'GothamBold';
+    text-align: left;
+    color: $midnightBlue;
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    @include responsive(lessthansmall) {
+      font-size: 20px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
+  }
+  p {
+    font-family: 'GothamNarrowBook';
+    font-size: 22px;
+    line-height: 1.65;
+    color: $black;
+    margin-bottom: 40px;
+    @include responsive(lessthansmall) {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  }
+  ul {
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 25px;
+    li {
+      font-family: 'GothamBook';
+      font-size: 16px;
+      line-height: 1.5;
+      padding-bottom: 15px;
+      @include responsive(lessthansmall) {
+        padding-bottom: 12px;
+        line-height: 1.8;
+      }
+      a {
+        color: $medBlue;
+        &.fLink {
+          position: relative;
+          margin-left: 14px;
+          &:before {
+            content: ' ';
+            position: absolute;
+            left: -10px;
+            background: url(../images/icon_caret.png) left bottom no-repeat;
+            height: 16px;
+            width: 10px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  // transition-property: opacity;
+  transition-duration: .25s;
+  transition: opacity 0.25s ease-in-out;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}

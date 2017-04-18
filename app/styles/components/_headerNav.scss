@@ -1,0 +1,276 @@
+header {
+  .navbar {
+    border-radius: 0px;
+    height: 110px;
+    margin-bottom: 0px;
+    border: none;
+    @include responsive(lessthansmall) {
+
+    }
+    .navbar-nav {
+      margin-top: 5px;
+    }
+    .navbar-nav .icon-text {
+      font-family: 'GothamBookMedium';
+      font-size: 12px;
+      font-weight: 600;
+      color: $black;
+    }
+    .sitename {
+      font-family: 'GothamBold';
+      font-size: 20px;
+      line-height: 1.2;
+      color: $lightBlue;
+      display: block;
+      @include responsive(lessthansmall) {
+        font-size: 14px;
+      }
+    }
+  }
+  .hallmark-container .hallmark {
+    img {
+      @include responsive(lessthansmall) {
+        width: 36px;
+        height: auto;
+      }
+    }
+  }
+  .navbar-default {
+    background-color: #fff !important;
+  }
+  nav.navbar-default .sitename-container {
+    min-height: 45px;
+    height: 45px;
+    position: relative;
+  }
+  nav.navbar-default .navbar-brand-centered,
+  nav.navbar-subsite .navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    top: 19px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+    line-height: 30px;
+    width: 170px;
+    margin-left: -85px !important;
+    min-height: 88px;
+  }
+  nav.navbar-default .navbar-toggle.dropdown-toggle:hover {
+    opacity: 0.6;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    @include responsive(lessthansmall) {
+      margin-right: 7px;
+    }
+  }
+  .navbar-nav > li > a {
+    @include responsive(lessthansmall) {
+      margin-top: 15px;
+    }
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+  }
+  nav.navbar-default .hamburger .navbar-toggle .glyphicon {
+    display: block;
+    font-size: 23px;
+    line-height: 34px;
+    margin-top: 8px;
+  }
+  nav.navbar-default .dropdown-large.search .dropdown-toggle .glyphicon {
+    display: block;
+    font-size: 21px;
+    line-height: 34px;
+    color: $black;
+    margin-left: 21px;
+  }
+}
+
+
+.navbar-toggle {
+  display: block !important;
+  padding-top: 7px;
+}
+.navbar-collapse.collapse {
+  display: block !important;
+  border-color: $white;
+}
+
+.utility-nav .dropdown-menu {
+  margin-top: 0;
+  border: none;
+  min-width: 320px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.utility-nav .small-nav-container {
+  padding-bottom: 20px;
+  background-color: #ededee;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  position: relative;
+}
+.utility-nav .dropdown-menu {
+  padding-top: 0;
+  top: -8px;
+  width: 100%;
+  max-width: 295px;
+  box-shadow: none;
+  @include responsive(lessthansmall) {
+    max-width: 100%;
+  }
+}
+.small-nav-container {
+  background-color: #ededee;
+  padding: 30px 0px;
+  h3 {
+    font-family: 'GothamBold';
+    margin-top: 0;
+    margin-bottom: 11px;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-left: 30px;
+    @include responsive(lessthansmall) {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+  }
+  li {
+    padding-left: 30px;
+    margin: 0;
+    font-size: 1.3em;
+    &:hover {
+      background-color: #686c67;
+      color: #fff;
+    }
+    a {
+      font-family: 'GothamBook';
+      font-size: 16px;
+      line-height: 1.4;
+      display: block;
+      width: 100%;
+      padding: 5px 0;
+      color: $black;
+      &:hover {
+        background-color: #686c67;
+        color: #fff;
+        text-decoration: none;
+      }
+      @include responsive(lessthansmall) {
+        font-size: 20px;
+        line-height: 1.3;
+        padding: 16px 0;
+      }
+    }
+  }
+  hr {
+    height: 2px;
+    border: none;
+    color: #ccc;
+    background-color: #ccc;
+    margin: 10px 30px;
+    display: none;
+    @include responsive(lessthansmall) {
+      display: block;
+      margin: 10px 30px 26px 30px;
+    }
+  }
+}
+.utility-nav .small-nav-container:after, .utility-nav .small-nav-container:before {
+    bottom: 100%;
+    left: 39px;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+    height: 0;
+    @include responsive(lessthansmall) {
+      display: none;
+    }
+}
+.utility-nav .small-nav-container:after {
+    border-bottom-color: #ededee;
+    border-width: 16px;
+    margin-left: -16px;
+}
+.hero-block {
+  .row {
+    margin: 0;
+    .col-xs-6 {
+      padding: 0;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .side-col {
+    width: 40%;
+  }
+  .mid-col {
+    width: 20%;
+  }
+  h1 {
+    font-family: 'GothamBold';
+    text-align: center;
+    color: $darkBlue;
+    padding: 0 12%;
+    margin: 0;
+    line-height: 1.25;
+    @include responsive(lessthanmedium) {
+      font-size: 24px;
+      padding: 0 6%;
+    }
+    @include responsive(lessthansmall) {
+      font-size: 16px;
+      padding: 0 4%;
+    }
+  }
+  @include responsive(lessthansmall) {
+    display: none;
+  }
+}
+.hero-block-mobile {
+  @include responsive(morethansmall) {
+    display: none;
+    }
+  .row {
+    margin: 0;
+    .col-xs-6 {
+      padding: 0;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .valign-middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h1 {
+    font-family: 'GothamBold';
+    text-align: center;
+    color: $darkBlue;
+    padding: 0 12%;
+    margin: 0;
+    line-height: 1.1;
+    @include responsive(lessthanmedium) {
+      font-size: 24px;
+      padding: 0 6%;
+    }
+    @include responsive(lessthansmall) {
+      font-size: 20px;
+      padding: 0 4%;
+    }
+    @include responsive(extrasmall) {
+      font-size: 16px;
+      padding: 0 4%;
+    }
+  }
+}
