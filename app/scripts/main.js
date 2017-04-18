@@ -31,8 +31,7 @@ $('.panel-default').each(function(){
     });
 })
 
-//add animations to site greater than 767
-if ($(window).width() >= 768) {
+
   setTimeout(function() {
 
   // init ScrollMagic Controller
@@ -398,7 +397,7 @@ if ($(window).width() >= 768) {
 
   }, 750);
 
-}
+
 
   //modal carousel controll
   $('.strategies-modal-trigger').click(function(){
