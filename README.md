@@ -2,6 +2,8 @@
 
 Custom interface built from scratch using Bootstrap, jQuery, scrollMagic, and gsap libraries.
 
+Front-end viewable here: <https://darrickfabian.github.io/>
+
 ## Requirements
 
 - [Node](https://nodejs.org/)
